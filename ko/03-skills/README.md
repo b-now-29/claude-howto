@@ -903,7 +903,7 @@ chmod +x ~/.claude/skills/my-skill/scripts/*.py
 - [에이전트 스킬 아키텍처 블로그](https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills)
 - [Skills 저장소](https://github.com/luongnv89/skills) - 바로 쓸 수 있는 스킬 모음
 - [슬래시 명령 가이드](../01-slash-commands/) - 사용자가 직접 시작하는 단축 명령
-- [서브에이전트 가이드](../../04-subagents/) - 작업을 맡기는 AI 에이전트
+- [서브에이전트 가이드](../04-subagents/) - 작업을 맡기는 AI 에이전트
 - [메모리 가이드](../02-memory/) - 지속적인 컨텍스트
 - [MCP (Model Context Protocol)](../../05-mcp/) - 실시간 외부 데이터
 - [훅 가이드](../../06-hooks/) - 이벤트 기반 자동화

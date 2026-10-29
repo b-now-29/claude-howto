@@ -134,7 +134,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 5 | [스킬](03-skills/) | 중급 | 1시간 |
 | 6 | [훅](../06-hooks/) | 중급 | 1시간 |
 | 7 | [MCP](../05-mcp/) | 중급+ | 1시간 |
-| 8 | [서브에이전트](../04-subagents/) | 중급+ | 1.5시간 |
+| 8 | [서브에이전트](04-subagents/) | 중급+ | 1.5시간 |
 | 9 | [고급 기능](../09-advanced-features/) | 고급 | 2~3시간 |
 | 10 | [플러그인](../07-plugins/) | 고급 | 2시간 |
 
@@ -243,7 +243,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **슬래시 명령** | 사용자가 직접 호출하는 단축 명령 | [01-slash-commands/](01-slash-commands/) |
 | **메모리** | 세션이 끝나도 유지되는 컨텍스트 | [02-memory/](02-memory/) |
 | **스킬** | 재사용할 수 있는 기능 | [03-skills/](03-skills/) |
-| **서브에이전트** | 전문화된 AI 어시스턴트 | [04-subagents/](../04-subagents/) |
+| **서브에이전트** | 전문화된 AI 어시스턴트 | [04-subagents/](04-subagents/) |
 | **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](../05-mcp/) |
 | **훅** | 이벤트 기반 자동화 | [06-hooks/](../06-hooks/) |
 | **플러그인** | 기능 묶음 | [07-plugins/](../07-plugins/) |
@@ -396,7 +396,7 @@ cp -r 03-skills/code-review-specialist /path/to/project/.claude/skills/
 <details>
 <summary>04. 서브에이전트</summary>
 
-**위치**: [04-subagents/](../04-subagents/)
+**위치**: [04-subagents/](04-subagents/)
 
 **내용**: 격리된 컨텍스트와 맞춤 프롬프트를 가진 전문 AI 어시스턴트
 
