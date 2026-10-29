@@ -58,15 +58,16 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 | 02-memory | 완료 | `bd2353d` |
 | 03-skills | 완료 | `33c6513` |
 | 04-subagents | 완료 | `5a1ba05` |
-| 05-mcp | 다음 차례 | |
-| 06-hooks | 대기 | |
-| 07-plugins | 대기 | |
-| 08-checkpoints | 대기 | |
-| 09-advanced-features | 대기 | |
+| 05-mcp | 완료 | `a01461f` |
+| 06-hooks | 완료 | `21db23a` |
+| 07-plugins | 완료 | `43464a9` |
+| 08-checkpoints | 완료 | `038f6c4` |
+| 09-advanced-features | 다음 차례 | |
 | 10-cli | 대기 | |
 | 나머지 루트 문서 (`LEARNING-ROADMAP.md`, `CATALOG.md` 등) | 대기 | |
 
 ## 남은 일과 메모
 
 - 번역이 끝나면 `.pre-commit-config.yaml`에 `ko/` 전용 검사를 추가해야 합니다 (`vi/`, `ja/` 항목 참고).
+- 06 챕터의 예제 훅 스크립트(`.sh`, `.py`)와 07 챕터 플러그인의 `plugin.json`, 훅(`.js`), 스크립트, MCP 설정은 `ko/`에 없습니다. 플러그인을 설치할 때는 원문 폴더를 지정합니다.
 - 03 챕터 스킬의 `scripts/`는 `ko/`에 없습니다. 한국어판 스킬을 실습할 때는 원문 폴더의 `scripts/`를 함께 복사해야 합니다.
