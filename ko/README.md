@@ -217,7 +217,7 @@ cp -r 03-skills/code-review-specialist ~/.claude/skills/
 네. 모든 템플릿은 Claude Fable 5.1, Claude Fable 5, Claude Opus 5.5, Claude Opus 5, Claude Sonnet 5.5, Claude Sonnet 5, Claude Sonnet 4.6, Claude Opus 4.8, Claude Haiku 5.5, Claude Haiku 4.5에서 작동합니다.
 
 **기여할 수 있나요?**
-물론입니다. 가이드라인은 [CONTRIBUTING.md](../CONTRIBUTING.md)를 참고하세요. 새 예제, 버그 수정, 문서 개선, 커뮤니티 템플릿 모두 환영합니다.
+물론입니다. 가이드라인은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요. 새 예제, 버그 수정, 문서 개선, 커뮤니티 템플릿 모두 환영합니다.
 
 **오프라인으로 읽을 수 있나요?**
 네. `uv run scripts/build_epub.py`를 실행하면 모든 내용과 렌더링된 다이어그램이 담긴 EPUB 전자책이 만들어집니다.
@@ -824,7 +824,7 @@ uv run scripts/build_epub.py
 
 문제를 발견했거나 예제를 기여하고 싶나요? 언제든 환영합니다!
 
-**다음 내용에 대한 자세한 가이드라인은 [CONTRIBUTING.md](../CONTRIBUTING.md)를 읽어 주세요.**
+**다음 내용에 대한 자세한 가이드라인은 [CONTRIBUTING.md](CONTRIBUTING.md)를 읽어 주세요.**
 - 기여 유형 (예제, 문서, 기능, 버그, 피드백)
 - 개발 환경 설정 방법
 - 디렉터리 구조와 콘텐츠 추가 방법
@@ -868,7 +868,7 @@ uv run scripts/build_epub.py
 
 ## 기여하기
 
-기여를 환영합니다! 시작하는 방법은 [기여 가이드](../CONTRIBUTING.md)를 참고하세요.
+기여를 환영합니다! 시작하는 방법은 [기여 가이드](CONTRIBUTING.md)를 참고하세요.
 
 ---
 
