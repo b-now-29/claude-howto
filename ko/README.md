@@ -76,7 +76,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 - **안내형 학습 경로**: 11~13시간 만에 초보자에서 파워 유저로 성장합니다
 - **내장 자가 진단**: Claude Code에서 바로 `/self-assessment`나 `/lesson-quiz hooks`를 실행해 부족한 부분을 찾을 수 있습니다
 
-**[학습 경로 시작하기 ->](../LEARNING-ROADMAP.md)**
+**[학습 경로 시작하기 ->](LEARNING-ROADMAP.md)**
 
 ---
 
@@ -84,7 +84,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 
 ### 1. 내 수준 찾기
 
-[자가 진단 퀴즈](../LEARNING-ROADMAP.md#-find-your-level)를 풀거나 Claude Code에서 `/self-assessment`를 실행합니다. 이미 아는 내용을 바탕으로 맞춤 로드맵을 받습니다.
+[자가 진단 퀴즈](LEARNING-ROADMAP.md#-내-수준-찾기)를 풀거나 Claude Code에서 `/self-assessment`를 실행합니다. 이미 아는 내용을 바탕으로 맞춤 로드맵을 받습니다.
 
 ### 2. 안내된 경로 따라가기
 
@@ -138,7 +138,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 9 | [고급 기능](09-advanced-features/) | 고급 | 2~3시간 |
 | 10 | [플러그인](07-plugins/) | 고급 | 2시간 |
 
-**[전체 학습 로드맵 ->](../LEARNING-ROADMAP.md)**
+**[전체 학습 로드맵 ->](LEARNING-ROADMAP.md)**
 
 ---
 
@@ -230,7 +230,7 @@ Claude Code는 이미 설치되어 있습니다. 생산성을 10배로 끌어올
 
 MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 것으로 만드세요.
 
-**[학습 경로 시작하기 ->](../LEARNING-ROADMAP.md)** | **[기능 카탈로그 둘러보기](../CATALOG.md)** | **[15분 만에 시작하기](#15분-만에-시작하기)**
+**[학습 경로 시작하기 ->](LEARNING-ROADMAP.md)** | **[기능 카탈로그 둘러보기](../CATALOG.md)** | **[15분 만에 시작하기](#15분-만에-시작하기)**
 
 ---
 

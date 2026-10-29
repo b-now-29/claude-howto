@@ -378,7 +378,7 @@ git diff
 ## 질문이 있나요?
 
 - [README](README.md)를 확인합니다
-- [LEARNING-ROADMAP.md](../LEARNING-ROADMAP.md)를 살펴봅니다
+- [LEARNING-ROADMAP.md](LEARNING-ROADMAP.md)를 살펴봅니다
 - 기존 예제를 참고합니다
 - 논의할 이슈를 엽니다
 

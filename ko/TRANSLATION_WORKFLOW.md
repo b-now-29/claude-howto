@@ -128,8 +128,8 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 2 | `STYLE_GUIDE.md` | 646 | 레슨 구조 규칙. 기여할 때 함께 읽음 | 완료 (`0e9b432`) |
 | 3 | `CODE_OF_CONDUCT.md` | 224 | 행동 강령. 해석이 갈리면 원문이 우선한다는 안내를 맨 위에 넣음 | 완료 (`69c217b`) |
 | 4 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 완료 (`a663f2e`) |
-| 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 다음 차례 |
-| 6 | `QUICK_REFERENCE.md` | 556 | 학습 중 자주 보는 요약표 | 대기 |
+| 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 완료 |
+| 6 | `QUICK_REFERENCE.md` | 556 | 학습 중 자주 보는 요약표 | 다음 차례 |
 | 7 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 대기 |
 | 8 | `claude_concepts_guide.md` | 1471 | 개념 설명 가이드 | 대기 |
 | 9 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 대기 |
