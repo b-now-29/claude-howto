@@ -130,7 +130,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 4 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 완료 (`a663f2e`) |
 | 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 완료 (`14ac8f5`) |
 | 6 | `QUICK_REFERENCE.md` | 556 | 학습 중 자주 보는 요약표 | 완료 (`de5a36d`) |
-| 7 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 완료 |
+| 7 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 완료 (`af735df`) |
 | 8 | `claude_concepts_guide.md` | 1471 | 개념 설명 가이드 | 다음 차례 |
 | 9 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 대기 |
 | 10 | `resources.md` | 271 | 외부 학습 자료 목록 | 대기 |
