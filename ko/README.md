@@ -136,7 +136,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 7 | [MCP](05-mcp/) | 중급+ | 1시간 |
 | 8 | [서브에이전트](04-subagents/) | 중급+ | 1.5시간 |
 | 9 | [고급 기능](../09-advanced-features/) | 고급 | 2~3시간 |
-| 10 | [플러그인](../07-plugins/) | 고급 | 2시간 |
+| 10 | [플러그인](07-plugins/) | 고급 | 2시간 |
 
 **[전체 학습 로드맵 ->](../LEARNING-ROADMAP.md)**
 
@@ -246,7 +246,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **서브에이전트** | 전문화된 AI 어시스턴트 | [04-subagents/](04-subagents/) |
 | **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](05-mcp/) |
 | **훅** | 이벤트 기반 자동화 | [06-hooks/](06-hooks/) |
-| **플러그인** | 기능 묶음 | [07-plugins/](../07-plugins/) |
+| **플러그인** | 기능 묶음 | [07-plugins/](07-plugins/) |
 | **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](../08-checkpoints/) |
 | **고급 기능** | 계획, 사고, 백그라운드 작업 | [09-advanced-features/](../09-advanced-features/) |
 | **CLI 레퍼런스** | 명령, 플래그, 옵션 | [10-cli/](../10-cli/) |
@@ -498,7 +498,7 @@ chmod +x ~/.claude/hooks/*.sh
 <details>
 <summary>07. 플러그인</summary>
 
-**위치**: [07-plugins/](../07-plugins/)
+**위치**: [07-plugins/](07-plugins/)
 
 **내용**: 명령, 에이전트, MCP, 훅을 하나로 묶은 모음
 
