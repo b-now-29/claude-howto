@@ -68,7 +68,7 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 
 ### 루트 문서 번역 범위
 
-학습자가 읽는 문서만 번역하고, 기여자·관리자용 문서는 원문을 그대로 링크합니다.
+학습자용 문서(1–7)를 먼저 번역하고, 이어서 다른 언어판(vi, ja, zh, uk)처럼 기여·정책 문서(8–12)도 번역합니다. 관리용 파일만 원문으로 둡니다.
 
 **번역함** (위에서부터 차례로):
 
@@ -81,14 +81,16 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 | 5 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 대기 |
 | 6 | `resources.md` | 271 | 외부 학습 자료 목록 | 대기 |
 | 7 | `clean-code-rules.md` | 115 | 04장 clean-code-reviewer 실습에 쓰는 규칙 | 대기 |
+| 8 | `CONTRIBUTING.md` | 388 | 기여 안내. 한국어 사용자의 기여 진입점 | 대기 |
+| 9 | `STYLE_GUIDE.md` | 646 | 레슨 구조 규칙. 기여할 때 함께 읽음 | 대기 |
+| 10 | `CODE_OF_CONDUCT.md` | 224 | 행동 강령. 해석이 갈리면 원문이 우선한다는 안내를 맨 위에 넣음 | 대기 |
+| 11 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 대기 |
+| 12 | `CHANGELOG.md` | 1227 | 변경 기록. 원문이 계속 늘어나므로 번역 시점의 버전까지만 옮기고, `i18n-source-sha`로 이후 갱신 범위를 확인 | 대기 |
 
 **번역하지 않음** (원문 링크 유지):
 
 | 파일 | 이유 |
 |------|------|
-| `CHANGELOG.md` | 버전마다 계속 바뀌는 변경 기록. 번역본은 금방 낡음 |
-| `CONTRIBUTING.md`, `STYLE_GUIDE.md` | 기여자용 규칙. 원문 하나만 기준으로 둠 |
-| `CODE_OF_CONDUCT.md`, `SECURITY.md` | 정책 문서. 번역 차이로 해석이 갈리지 않도록 원문만 유지 |
 | `CLAUDE.md` | 이 저장소 관리용 Claude 지침. 학습 대상이 아님 |
 | `README.md` | 이미 `ko/README.md`로 번역 완료 |
 
