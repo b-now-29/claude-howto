@@ -133,7 +133,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 7 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 완료 (`af735df`) |
 | 8 | `claude_concepts_guide.md` | 1471 | 개념 설명 가이드 | 완료 (`5486b1d`) |
 | 9 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 다음 차례 |
-| 10 | `resources.md` | 271 | 외부 학습 자료 목록 | 대기 |
+| 10 | `resources.md` | 271 | 외부 학습 자료 목록 | 다음 차례 |
 | 11 | `clean-code-rules.md` | 115 | 04장 clean-code-reviewer 실습에 쓰는 규칙 | 대기 |
 | 12 | `CHANGELOG.md` | 1227 | 변경 기록. 원문이 계속 늘어나므로 번역 시점의 버전까지만 옮기고, `i18n-source-sha`로 이후 갱신 범위를 확인 | 대기 |
 
