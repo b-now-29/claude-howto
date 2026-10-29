@@ -114,7 +114,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 08-checkpoints | 완료 | `038f6c4` |
 | 09-advanced-features | 완료 | `f481ec7` |
 | 10-cli | 완료 | `c18e365` |
-| 루트 문서 (아래 목록) | 진행 중 | |
+| 루트 문서 (아래 목록) | 진행 중 (기여·정책 문서 완료) | |
 
 ### 루트 문서 번역 범위
 
@@ -127,8 +127,8 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 1 | `CONTRIBUTING.md` | 388 | 기여 안내. 한국어 사용자의 기여 진입점 | 완료 (`2d0d1e5`) |
 | 2 | `STYLE_GUIDE.md` | 646 | 레슨 구조 규칙. 기여할 때 함께 읽음 | 완료 (`0e9b432`) |
 | 3 | `CODE_OF_CONDUCT.md` | 224 | 행동 강령. 해석이 갈리면 원문이 우선한다는 안내를 맨 위에 넣음 | 완료 (`69c217b`) |
-| 4 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 다음 차례 |
-| 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 대기 |
+| 4 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 완료 |
+| 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 다음 차례 |
 | 6 | `QUICK_REFERENCE.md` | 556 | 학습 중 자주 보는 요약표 | 대기 |
 | 7 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 대기 |
 | 8 | `claude_concepts_guide.md` | 1471 | 개념 설명 가이드 | 대기 |

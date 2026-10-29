@@ -833,7 +833,7 @@ uv run scripts/build_epub.py
 
 **커뮤니티 기준:**
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - 서로를 대하는 방식
-- [SECURITY.md](../SECURITY.md) - 보안 정책과 취약점 신고
+- [SECURITY.md](SECURITY.md) - 보안 정책과 취약점 신고
 
 ### 보안 문제 신고
 
