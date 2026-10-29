@@ -129,7 +129,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 |------|------|------|-----------|
 | 1 | [슬래시 명령](01-slash-commands/) | 초급 | 30분 |
 | 2 | [메모리](02-memory/) | 초급+ | 45분 |
-| 3 | [체크포인트](../08-checkpoints/) | 중급 | 45분 |
+| 3 | [체크포인트](08-checkpoints/) | 중급 | 45분 |
 | 4 | [CLI 기초](../10-cli/) | 초급+ | 30분 |
 | 5 | [스킬](03-skills/) | 중급 | 1시간 |
 | 6 | [훅](06-hooks/) | 중급 | 1시간 |
@@ -247,7 +247,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](05-mcp/) |
 | **훅** | 이벤트 기반 자동화 | [06-hooks/](06-hooks/) |
 | **플러그인** | 기능 묶음 | [07-plugins/](07-plugins/) |
-| **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](../08-checkpoints/) |
+| **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](08-checkpoints/) |
 | **고급 기능** | 계획, 사고, 백그라운드 작업 | [09-advanced-features/](../09-advanced-features/) |
 | **CLI 레퍼런스** | 명령, 플래그, 옵션 | [10-cli/](../10-cli/) |
 | **블로그 글** | 실제 사용 예시 | [블로그 글](https://medium.com/@luongnv89) |
@@ -522,7 +522,7 @@ claude --plugin-dir ./07-plugins/documentation
 <details>
 <summary>08. 체크포인트와 되감기</summary>
 
-**위치**: [08-checkpoints/](../08-checkpoints/)
+**위치**: [08-checkpoints/](08-checkpoints/)
 
 **내용**: 대화 상태를 저장하고 이전 시점으로 되돌아가 다른 접근 방식을 시도합니다
 
