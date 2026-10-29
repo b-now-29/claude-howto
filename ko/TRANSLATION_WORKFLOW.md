@@ -51,12 +51,16 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 
 ## 품질 검사
 
-저장소 `CLAUDE.md`는 커밋 전에 `pre-commit run --all-files`를 요구하지만, 클라우드 세션 컨테이너에는 `pre-commit`과 `.venv`가 없습니다. 아직 한 번도 전체 검사를 돌리지 않았으므로, 다음 작업은 이 검사부터 합니다.
+저장소 `CLAUDE.md`는 커밋 전에 `pre-commit run --all-files`를 요구합니다.
 
-**환경 확인 결과 (2026-10-29, 클라우드 세션)**
-- PyPI, npm, nodejs.org 접속 가능. GitHub는 `git ls-remote`로 접속 확인.
-- Node.js 22(`/opt/node22/bin/node`)와 `uv`는 설치되어 있음.
-- 컨테이너는 세션이 끝나면 사라지므로 새 세션마다 1단계를 다시 합니다.
+**작업 환경 방침 (2026-10-29 결정)**
+- 품질 검사의 기준 환경은 **로컬**입니다. 커밋 전 최종 검사는 로컬에서 정식 절차대로 돌립니다.
+- 클라우드 세션에서는 번역과 아래 우회 방법으로 할 수 있는 검사까지만 합니다.
+
+**첫 검사 결과 (2026-10-29, 클라우드 세션, `2170c0a` 기준)**
+- `ko/` 대상 검사는 모두 통과했습니다. 번역 문제는 없었습니다.
+- 환경 문제 1: pre-commit 4.7.0에서 `mermaid` 훅이 `` `language: node` must have package.json or additional_dependencies `` 오류로 멈춥니다. 저장소 설정 쪽 문제이므로 로컬에서도 생길 수 있습니다.
+- 환경 문제 2: Pele 번들 출처 `cdn.jsdelivr.net`이 클라우드 프록시에서 403으로 막힙니다. npm 레지스트리는 열려 있습니다.
 
 **1. 가상환경과 도구 설치**
 
@@ -68,16 +72,31 @@ uv pip install -r scripts/requirements-dev.txt pre-commit
 
 **2. `ko/` 파일만 검사**
 
-`--all-files` 대신 `ko/`만 지정합니다. `trailing-whitespace`, `end-of-file-fixer` 훅은 파일을 직접 고치므로, 전체로 돌리면 번역과 상관없는 파일까지 바뀔 수 있습니다.
+`--all-files` 대신 `ko/`만 지정합니다. `trailing-whitespace`, `end-of-file-fixer` 훅은 파일을 직접 고치므로, 전체로 돌리면 번역과 상관없는 파일까지 바뀔 수 있습니다. `mermaid` 훅 오류가 나면 mermaid 훅만 건너뜁니다.
 
 ```bash
-pre-commit run --files $(git ls-files ko)
+SKIP=mermaid,vietnamese-mermaid,japanese-mermaid pre-commit run --files $(git ls-files ko)
 ```
+
+**3. Mermaid 검사 (클라우드 세션)**
+
+npm 레지스트리에서 같은 버전의 Pele를 받아 캐시에 넣습니다. 스크립트가 sha256을 검증하므로 파일이 다르면 검사가 실패합니다(2026-10-29에 세 파일 모두 일치 확인).
+
+```bash
+curl -sS -o /tmp/pele.tgz https://registry.npmjs.org/pele/-/pele-1.6.0.tgz
+tar xzf /tmp/pele.tgz -C /tmp
+mkdir -p scripts/.vendor-cache/pele/1.6.0
+cp /tmp/package/dist/pele.js scripts/.vendor-cache/pele/1.6.0/pele.mjs
+cp /tmp/package/dist/pele.global.js /tmp/package/LICENSE scripts/.vendor-cache/pele/1.6.0/
+PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
+```
+
+로컬에서는 마지막 줄만 실행합니다(Node.js 20 이상 필요).
 
 **주의**
 - 기본 문서 검사 5종(`markdown-lint`, `cross-references`, `mermaid`, `link-check`, `markdown-rendering`)은 경로 제한이 없어 `ko/`에도 적용됩니다. `vi/`, `ja/` 같은 언어 전용 검사만 `ko/`에 없습니다.
-- `mermaid`는 첫 실행 때 Node.js 22와 Pele 번들을 내려받습니다. Pele 다운로드 출처는 아직 확인하지 않았습니다. 받지 못하면 `SKIP=mermaid`로 나머지만 돌립니다.
-- `link-check`는 외부 URL에 실제로 접속합니다. 환경의 프록시 정책 때문에 실패할 수 있으니, 결과를 **번역 문제**와 **환경(네트워크) 문제**로 나눠 사용자에게 보고합니다.
+- `link-check`는 외부 URL에 실제로 접속합니다. 실패하면 결과를 **번역 문제**와 **환경(네트워크) 문제**로 나눠 사용자에게 보고합니다.
+- 클라우드 컨테이너는 세션이 끝나면 사라지므로 새 세션마다 1단계와 3단계를 다시 합니다.
 - 검사에서 나온 번역 문제는 고치되, 커밋·푸시는 사용자가 요청할 때 합니다.
 
 ## 진행 상황
