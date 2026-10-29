@@ -62,9 +62,9 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 | 06-hooks | 완료 | `21db23a` |
 | 07-plugins | 완료 | `43464a9` |
 | 08-checkpoints | 완료 | `038f6c4` |
-| 09-advanced-features | 다음 차례 | |
-| 10-cli | 대기 | |
-| 나머지 루트 문서 (`LEARNING-ROADMAP.md`, `CATALOG.md` 등) | 대기 | |
+| 09-advanced-features | 완료 | `f481ec7` |
+| 10-cli | 완료 | `c18e365` |
+| 나머지 루트 문서 (`LEARNING-ROADMAP.md`, `CATALOG.md` 등) | 다음 차례 | |
 
 ## 남은 일과 메모
 
