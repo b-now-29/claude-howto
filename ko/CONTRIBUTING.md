@@ -360,7 +360,7 @@ git diff
 
 ## 행동 강령
 
-모두를 환영하고 포용하는 커뮤니티를 만들고자 합니다. 커뮤니티 기준 전체는 [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md)를 읽어 주세요.
+모두를 환영하고 포용하는 커뮤니티를 만들고자 합니다. 커뮤니티 기준 전체는 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)를 읽어 주세요.
 
 요약하면 다음과 같습니다.
 - 존중하고 포용합니다
