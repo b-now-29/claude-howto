@@ -318,7 +318,7 @@ Claude Code는 **최근 체크포인트 100개**의 스냅샷만 보관합니다
 
 ## 관련 개념
 
-- **[고급 기능](../../09-advanced-features/)** - 계획 모드와 그 밖의 고급 기능
+- **[고급 기능](../09-advanced-features/)** - 계획 모드와 그 밖의 고급 기능
 - **[메모리 관리](../02-memory/)** - 대화 기록과 컨텍스트 관리
 - **[슬래시 명령](../01-slash-commands/)** - 사용자가 호출하는 단축 명령
 - **[훅](../06-hooks/)** - 이벤트 기반 자동화
@@ -327,7 +327,7 @@ Claude Code는 **최근 체크포인트 100개**의 스냅샷만 보관합니다
 ## 추가 자료
 
 - [Official Checkpointing Documentation](https://code.claude.com/docs/en/checkpointing)
-- [고급 기능 가이드](../../09-advanced-features/) - 확장 사고(extended thinking)와 그 밖의 기능
+- [고급 기능 가이드](../09-advanced-features/) - 확장 사고(extended thinking)와 그 밖의 기능
 
 ## 요약
 

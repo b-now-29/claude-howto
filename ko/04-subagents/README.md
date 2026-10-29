@@ -1342,7 +1342,7 @@ graph TD
 - 나중에 에이전트 호출 사슬을 재구성하기 (parent_id가 트리를 이룸)
 - 폭주하는 서브에이전트 경고하기 (예: `agent.id` 하나가 세션 비용의 50% 넘게 차지할 때)
 
-내보내기 설정을 처음부터 끝까지 하려면 [고급 기능 → 텔레메트리](../../09-advanced-features/README.md)의 OpenTelemetry 단락을 참고하세요.
+내보내기 설정을 처음부터 끝까지 하려면 [고급 기능 → 텔레메트리](../09-advanced-features/README.md)의 OpenTelemetry 단락을 참고하세요.
 
 ## 추가 자료
 

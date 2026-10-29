@@ -1645,7 +1645,7 @@ chmod +x ~/.claude/hooks/*.sh
 - **[스킬](../03-skills/)** - 재사용할 수 있는 자율 기능
 - **[서브에이전트](../04-subagents/)** - 작업 위임 실행
 - **[플러그인](../07-plugins/)** - 묶음 확장 패키지
-- **[고급 기능](../../09-advanced-features/)** - Claude Code 고급 기능 살펴보기
+- **[고급 기능](../09-advanced-features/)** - Claude Code 고급 기능 살펴보기
 
 ## 추가 자료
 

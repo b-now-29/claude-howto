@@ -121,7 +121,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 |------|---------------|-----------|-----------|
 | **초급** | Claude Code를 실행하고 대화하기 | [슬래시 명령](01-slash-commands/) | 약 2.5시간 |
 | **중급** | CLAUDE.md와 맞춤 명령 사용하기 | [스킬](03-skills/) | 약 3.5시간 |
-| **고급** | MCP 서버와 훅 설정하기 | [고급 기능](../09-advanced-features/) | 약 5시간 |
+| **고급** | MCP 서버와 훅 설정하기 | [고급 기능](09-advanced-features/) | 약 5시간 |
 
 **10개 모듈 전체 학습 경로:**
 
@@ -135,7 +135,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 6 | [훅](06-hooks/) | 중급 | 1시간 |
 | 7 | [MCP](05-mcp/) | 중급+ | 1시간 |
 | 8 | [서브에이전트](04-subagents/) | 중급+ | 1.5시간 |
-| 9 | [고급 기능](../09-advanced-features/) | 고급 | 2~3시간 |
+| 9 | [고급 기능](09-advanced-features/) | 고급 | 2~3시간 |
 | 10 | [플러그인](07-plugins/) | 고급 | 2시간 |
 
 **[전체 학습 로드맵 ->](../LEARNING-ROADMAP.md)**
@@ -248,7 +248,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **훅** | 이벤트 기반 자동화 | [06-hooks/](06-hooks/) |
 | **플러그인** | 기능 묶음 | [07-plugins/](07-plugins/) |
 | **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](08-checkpoints/) |
-| **고급 기능** | 계획, 사고, 백그라운드 작업 | [09-advanced-features/](../09-advanced-features/) |
+| **고급 기능** | 계획, 사고, 백그라운드 작업 | [09-advanced-features/](09-advanced-features/) |
 | **CLI 레퍼런스** | 명령, 플래그, 옵션 | [10-cli/](../10-cli/) |
 | **블로그 글** | 실제 사용 예시 | [블로그 글](https://medium.com/@luongnv89) |
 
@@ -558,7 +558,7 @@ claude --plugin-dir ./07-plugins/documentation
 <details>
 <summary>09. 고급 기능</summary>
 
-**위치**: [09-advanced-features/](../09-advanced-features/)
+**위치**: [09-advanced-features/](09-advanced-features/)
 
 **내용**: 복잡한 워크플로와 자동화를 위한 고급 기능
 
