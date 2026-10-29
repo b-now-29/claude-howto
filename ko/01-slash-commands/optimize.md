@@ -1,0 +1,29 @@
+---
+description: 코드의 성능 문제를 분석하고 최적화 방안 제안하기
+---
+<!-- i18n-source: 01-slash-commands/optimize.md -->
+<!-- i18n-source-sha: ba721a3 -->
+<!-- i18n-date: 2026-10-29 -->
+
+# 코드 최적화
+
+주어진 코드에서 다음 문제를 우선순위 순서대로 검토합니다.
+
+1. **성능 병목** - O(n²) 연산, 비효율적인 반복문 찾기
+2. **메모리 누수** - 해제되지 않은 리소스, 순환 참조 찾기
+3. **알고리즘 개선** - 더 나은 알고리즘이나 자료 구조 제안
+4. **캐싱 기회** - 반복되는 계산 찾기
+5. **동시성 문제** - 경쟁 조건이나 스레드 문제 찾기
+
+응답은 다음 형식으로 작성합니다.
+- 문제 심각도 (Critical/High/Medium/Low)
+- 코드 내 위치
+- 설명
+- 코드 예시를 포함한 권장 수정 방법
+
+---
+**마지막 업데이트**: 2026년 8월 4일
+**Claude Code 버전**: 2.1.220
+**출처**:
+- https://code.claude.com/docs/en/commands
+**호환 모델**: Claude Fable 5, Claude Opus 5, Claude Sonnet 5, Claude Sonnet 4.6, Claude Opus 4.8, Claude Haiku 4.5
