@@ -132,7 +132,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 3 | [체크포인트](../08-checkpoints/) | 중급 | 45분 |
 | 4 | [CLI 기초](../10-cli/) | 초급+ | 30분 |
 | 5 | [스킬](03-skills/) | 중급 | 1시간 |
-| 6 | [훅](../06-hooks/) | 중급 | 1시간 |
+| 6 | [훅](06-hooks/) | 중급 | 1시간 |
 | 7 | [MCP](05-mcp/) | 중급+ | 1시간 |
 | 8 | [서브에이전트](04-subagents/) | 중급+ | 1.5시간 |
 | 9 | [고급 기능](../09-advanced-features/) | 고급 | 2~3시간 |
@@ -245,7 +245,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **스킬** | 재사용할 수 있는 기능 | [03-skills/](03-skills/) |
 | **서브에이전트** | 전문화된 AI 어시스턴트 | [04-subagents/](04-subagents/) |
 | **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](05-mcp/) |
-| **훅** | 이벤트 기반 자동화 | [06-hooks/](../06-hooks/) |
+| **훅** | 이벤트 기반 자동화 | [06-hooks/](06-hooks/) |
 | **플러그인** | 기능 묶음 | [07-plugins/](../07-plugins/) |
 | **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](../08-checkpoints/) |
 | **고급 기능** | 계획, 사고, 백그라운드 작업 | [09-advanced-features/](../09-advanced-features/) |
@@ -447,7 +447,7 @@ claude mcp add --transport http github https://api.githubcopilot.com/mcp/ --head
 <details>
 <summary>06. 훅</summary>
 
-**위치**: [06-hooks/](../06-hooks/)
+**위치**: [06-hooks/](06-hooks/)
 
 **내용**: Claude Code 이벤트에 반응해 자동으로 실행되는 이벤트 기반 셸 명령
 
