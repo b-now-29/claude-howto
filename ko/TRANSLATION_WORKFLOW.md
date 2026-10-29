@@ -125,7 +125,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 순서 | 파일 | 줄 수 | 이유 | 상태 |
 |------|------|-------|------|------|
 | 1 | `CONTRIBUTING.md` | 388 | 기여 안내. 한국어 사용자의 기여 진입점 | 완료 (`2d0d1e5`) |
-| 2 | `STYLE_GUIDE.md` | 646 | 레슨 구조 규칙. 기여할 때 함께 읽음 | 완료 |
+| 2 | `STYLE_GUIDE.md` | 646 | 레슨 구조 규칙. 기여할 때 함께 읽음 | 완료 (`0e9b432`) |
 | 3 | `CODE_OF_CONDUCT.md` | 224 | 행동 강령. 해석이 갈리면 원문이 우선한다는 안내를 맨 위에 넣음 | 다음 차례 |
 | 4 | `SECURITY.md` | 337 | 보안 정책. 원문 우선 안내를 맨 위에 넣음 | 대기 |
 | 5 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 대기 |
