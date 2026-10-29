@@ -445,7 +445,7 @@ claude --agent code-reviewer
 
 ### 사용할 수 있는 에이전트 보기
 
-어떤 서브에이전트가 설정되어 있는지 보려면 Claude에게 묻거나 `.claude/agents/`와 `~/.claude/agents/`를 살펴보세요. (`claude agents`는 이와 관계없는 명령으로, 백그라운드 세션용 에이전트 보기를 엽니다. [CLI](../../10-cli/README.md#agent-view-claude-agents-v21139)를 참고하세요.)
+어떤 서브에이전트가 설정되어 있는지 보려면 Claude에게 묻거나 `.claude/agents/`와 `~/.claude/agents/`를 살펴보세요. (`claude agents`는 이와 관계없는 명령으로, 백그라운드 세션용 에이전트 보기를 엽니다. [CLI](../10-cli/README.md#에이전트-뷰-claude-agents-v21139)를 참고하세요.)
 
 ---
 
