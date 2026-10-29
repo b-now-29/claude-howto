@@ -216,7 +216,7 @@ claude /team-onboarding
 
 - 최근 세션에서 반복되는 워크플로
 - 가장 자주 실행하는 명령
-- 사용하는 [MCP 서버](../../05-mcp/README.md)
+- 사용하는 [MCP 서버](../05-mcp/README.md)
 
 **제공 시기:** Claude Code v2.1.101 (2026년 4월 11일)에 포함되었습니다.
 

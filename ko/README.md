@@ -133,7 +133,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 | 4 | [CLI 기초](../10-cli/) | 초급+ | 30분 |
 | 5 | [스킬](03-skills/) | 중급 | 1시간 |
 | 6 | [훅](../06-hooks/) | 중급 | 1시간 |
-| 7 | [MCP](../05-mcp/) | 중급+ | 1시간 |
+| 7 | [MCP](05-mcp/) | 중급+ | 1시간 |
 | 8 | [서브에이전트](04-subagents/) | 중급+ | 1.5시간 |
 | 9 | [고급 기능](../09-advanced-features/) | 고급 | 2~3시간 |
 | 10 | [플러그인](../07-plugins/) | 고급 | 2시간 |
@@ -244,7 +244,7 @@ MIT 라이선스. 앞으로도 계속 무료. 클론하고, 포크하고, 내 �
 | **메모리** | 세션이 끝나도 유지되는 컨텍스트 | [02-memory/](02-memory/) |
 | **스킬** | 재사용할 수 있는 기능 | [03-skills/](03-skills/) |
 | **서브에이전트** | 전문화된 AI 어시스턴트 | [04-subagents/](04-subagents/) |
-| **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](../05-mcp/) |
+| **MCP 프로토콜** | 외부 도구 접근 | [05-mcp/](05-mcp/) |
 | **훅** | 이벤트 기반 자동화 | [06-hooks/](../06-hooks/) |
 | **플러그인** | 기능 묶음 | [07-plugins/](../07-plugins/) |
 | **체크포인트** | 세션 스냅샷과 되감기 | [08-checkpoints/](../08-checkpoints/) |
@@ -419,13 +419,13 @@ cp 04-subagents/*.md /path/to/project/.claude/agents/
 <details>
 <summary>05. MCP 프로토콜</summary>
 
-**위치**: [05-mcp/](../05-mcp/)
+**위치**: [05-mcp/](05-mcp/)
 
 **내용**: 외부 도구와 API에 접근하기 위한 Model Context Protocol
 
 **예제**:
 - `github-mcp.json` - GitHub 연동
-- `database-mcp.json` - 데이터베이스 조회 (`DATABASE_URL`은 SELECT만 할 수 있는 사용자로 지정하세요. [읽기 전용 설정](../05-mcp/README.md#example-2-database-mcp-setup) 참고)
+- `database-mcp.json` - 데이터베이스 조회 (`DATABASE_URL`은 SELECT만 할 수 있는 사용자로 지정하세요. [읽기 전용 설정](05-mcp/README.md#예제-2-데이터베이스-mcp-설정) 참고)
 - `filesystem-mcp.json` - 파일 작업
 - `multi-mcp.json` - 여러 MCP 서버
 
