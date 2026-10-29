@@ -29,7 +29,7 @@
 | 명령 | 용도 |
 |------|------|
 | `/add-dir <path>` | 작업 디렉터리 추가 |
-| `/advisor [model\|off]` | 어드바이저 설정. 대화 상자로 열립니다. 데스크톱 앱, Remote Control, 헤드리스(`-p` / Agent SDK) 세션에서는 대신 텍스트 형식을 받습니다: 인수 없는 `/advisor`, `/advisor <model>`, `/advisor off` (v2.1.260+) |
+| `/advisor [model\|off]` | 어드바이저 설정. 대화 상자로 열립니다. 데스크톱 앱, Remote Control, 헤드리스(`-p` / Agent SDK) 세션에서는 대신 텍스트 형식을 받습니다. `/advisor`, `/advisor <model>`, `/advisor off` (v2.1.260+) |
 | `/agents` | 더 이상 작동하지 않는 명령입니다. 대화형 마법사는 v2.1.198에서 제거되었고, v2.1.281부터는 `/` 메뉴와 `/help`에도 나타나지 않습니다. 입력하면 마법사가 어디로 옮겨졌는지만 설명합니다. 서브에이전트를 만들거나 관리하려면 Claude에게 요청하거나 `.claude/agents/` 파일을 직접 편집하세요 |
 | `/artifacts` | 내가 소유했거나 나에게 공유된 아티팩트를 나열하고, 하나를 골라 세션에 첨부하거나 브라우저에서 열거나 링크를 복사합니다 (v2.1.208+). `d`로 삭제하면 확인을 묻습니다: 1 또는 Enter는 유지, 2는 삭제, Esc는 취소 (v2.1.305) |
 | `/auto-mode-setup` | 프로젝트와 최근 세션을 바탕으로 `autoMode.environment` 항목 초안을 만들고, 검토한 뒤 사용자 설정에 저장합니다. Pro/Max/Team: v2.1.228+ (네이티브 Windows는 v2.1.233+); Enterprise 또는 Console API 키: v2.1.283+. v2.1.304부터 Bedrock, Vertex, Foundry, Claude 앱 게이트웨이, 텔레메트리를 끈 세션에서도 쓸 수 있습니다 |
