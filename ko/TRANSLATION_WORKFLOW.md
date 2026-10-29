@@ -64,7 +64,35 @@ claude/fervent-mendel-02w63r 브랜치를 가져와서 ko/TRANSLATION_NOTES.md�
 | 08-checkpoints | 완료 | `038f6c4` |
 | 09-advanced-features | 완료 | `f481ec7` |
 | 10-cli | 완료 | `c18e365` |
-| 나머지 루트 문서 (`LEARNING-ROADMAP.md`, `CATALOG.md` 등) | 다음 차례 | |
+| 루트 문서 (아래 목록) | 다음 차례 | |
+
+### 루트 문서 번역 범위
+
+학습자가 읽는 문서만 번역하고, 기여자·관리자용 문서는 원문을 그대로 링크합니다.
+
+**번역함** (위에서부터 차례로):
+
+| 순서 | 파일 | 줄 수 | 이유 | 상태 |
+|------|------|-------|------|------|
+| 1 | `LEARNING-ROADMAP.md` | 768 | 학습 순서 안내. `ko/README.md`에서 4번 링크 | 다음 차례 |
+| 2 | `QUICK_REFERENCE.md` | 556 | 학습 중 자주 보는 요약표 | 대기 |
+| 3 | `CATALOG.md` | 637 | 기능·명령 카탈로그. `ko/README.md`에서 3번 링크 | 대기 |
+| 4 | `claude_concepts_guide.md` | 1471 | 개념 설명 가이드 | 대기 |
+| 5 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 대기 |
+| 6 | `resources.md` | 271 | 외부 학습 자료 목록 | 대기 |
+| 7 | `clean-code-rules.md` | 115 | 04장 clean-code-reviewer 실습에 쓰는 규칙 | 대기 |
+
+**번역하지 않음** (원문 링크 유지):
+
+| 파일 | 이유 |
+|------|------|
+| `CHANGELOG.md` | 버전마다 계속 바뀌는 변경 기록. 번역본은 금방 낡음 |
+| `CONTRIBUTING.md`, `STYLE_GUIDE.md` | 기여자용 규칙. 원문 하나만 기준으로 둠 |
+| `CODE_OF_CONDUCT.md`, `SECURITY.md` | 정책 문서. 번역 차이로 해석이 갈리지 않도록 원문만 유지 |
+| `CLAUDE.md` | 이 저장소 관리용 Claude 지침. 학습 대상이 아님 |
+| `README.md` | 이미 `ko/README.md`로 번역 완료 |
+
+번역한 루트 문서를 마칠 때마다 `ko/` 안의 해당 링크(`../LEARNING-ROADMAP.md` 등)를 번역본으로 바꿉니다.
 
 ## 남은 일과 메모
 
