@@ -898,6 +898,16 @@ def convert_internal_links(
     return str(soup)
 
 
+def github_slugify(value: str, separator: str) -> str:
+    """Build heading ids the way GitHub does, so `#anchor` links keep working.
+
+    Unlike the toc extension's default, this keeps non-ASCII letters (Japanese,
+    Korean, ...) and does not collapse repeated hyphens.
+    """
+    value = re.sub(r"[^\w\- ]", "", value.strip().lower())
+    return value.replace(" ", separator)
+
+
 def md_to_html(
     md_content: str,
     current_file: Path,
@@ -926,6 +936,7 @@ def md_to_html(
             "codehilite",
             "toc",
         ],
+        extension_configs={"toc": {"slugify": github_slugify}},
     )
 
     # Embed SVG images as EPUB resources (using <img> tags, not <object>)
