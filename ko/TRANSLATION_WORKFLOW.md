@@ -148,6 +148,36 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 
 번역한 루트 문서를 마칠 때마다 `ko/` 안의 해당 링크(`../LEARNING-ROADMAP.md` 등)를 번역본으로 바꿉니다.
 
+### 보조 폴더 번역 계획 (`.github/`, `scripts/`, `resources/`)
+
+> 상태: **계획만 세움 (2026-10-30)**. 아직 번역하지 않았습니다. 사용자가 요청하면 아래 순서대로 진행합니다.
+
+`ja/`, `zh/`처럼 이 세 폴더의 `.md` 파일을 `ko/` 아래 같은 경로로 번역합니다.
+
+| 순서 | 파일 | 줄 수 | 상태 |
+|------|------|-------|------|
+| 1 | `.github/TESTING.md` | 341 | 대기 |
+| 2 | `.github/SECURITY_REPORTING.md` | 309 | 대기 |
+| 3 | `.github/pull_request_template.md` | 57 | 대기 |
+| 4 | `.github/ISSUE_TEMPLATE/` (`bug_report.md`, `documentation.md`, `feature_request.md`, `question.md`) | 각 40~46 | 대기 |
+| 5 | `scripts/README.md` | 207 | 대기 |
+| 6 | `resources/README.md` | 266 | 대기 |
+| 7 | `resources/DESIGN-SYSTEM.md` | 244 | 대기 |
+| 8 | `resources/QUICK-START.md` | 89 | 대기 |
+
+**규칙**
+- **`ko/README.md`의 링크는 바꾸지 않습니다.** `TESTING.md`, `scripts/README.md`, `SECURITY_REPORTING.md` 링크는 번역 뒤에도 원문 위치(`../.github/...`, `../scripts/...`)를 가리킵니다. 위 "챕터를 마칠 때마다 링크를 번역본으로 바꾼다"는 규칙의 예외입니다.
+- `ISSUE_TEMPLATE/config.yml`, 이미지(로고·아이콘·파비콘), 스크립트는 복사하지 않습니다.
+- 이슈 템플릿 프런트매터는 `about`만 번역하고 `name`, `title`, `labels`, `assignees`는 그대로 둡니다. 원문 표시 주석은 프런트매터 바로 아래에 둡니다(`ja/`는 맨 위에 두었지만 따르지 않음).
+- GitHub는 루트 `.github/`만 양식으로 쓰므로, `ko/.github/`의 양식 파일 맨 위에는 참고용 번역이라는 안내를 한 줄 넣습니다.
+- `SECURITY_REPORTING.md`에는 `ko/SECURITY.md`처럼 원문 우선 안내를 맨 위에 넣고, 신고 링크와 연락처는 그대로 둡니다.
+- `resources/` 문서의 이미지 경로(`logos/...` 등)는 원문 폴더를 가리키도록 `../../resources/...`로 바꿉니다.
+- 커밋 메시지: `docs(ko): translate <폴더> docs to Korean`. 폴더마다 커밋합니다.
+
+**번역하지 않음**
+- `docs/`: 2026년 4월 시점의 내부 개발 계획이라 학습자에게 필요하지 않습니다.
+- `prompts/`: 영상 제작용 Claude 프롬프트로 튜토리얼과 관계없고, Claude에게 넣는 입력이므로 영어로 둡니다.
+
 ## 남은 일과 메모
 
 - `.pre-commit-config.yaml`에 `ko/` 전용 검사(`korean-markdown-lint`, `korean-cross-references`, `korean-mermaid`, `korean-link-check`)를 추가했습니다. 클라우드 세션에서 Mermaid 우회 방법을 쓸 때는 `SKIP`에 `korean-mermaid`도 넣습니다.
