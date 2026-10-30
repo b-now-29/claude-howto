@@ -3,8 +3,6 @@
 # Translation Glossary & Style Guide
 
 > **중요:** 이 문서는 Claude Code 문서를 한국어로 번역할 때 지킬 규칙을 정합니다. 번역을 시작하기 전에 꼭 읽어 주세요.
->
-> 작업 진행 방식과 진행 상황은 [TRANSLATION_WORKFLOW.md](TRANSLATION_WORKFLOW.md)에 있습니다. 두 파일을 함께 읽으세요.
 
 ## 기본 방침
 

@@ -511,8 +511,6 @@ agent: Explore                     # context: fork에 쓸 에이전트 유형
 - `description`은 한 문장으로 씁니다
 - 필요한 필드만 넣습니다
 
-한국어판 템플릿에서는 `i18n-source` 주석을 프런트매터 바로 아래에 둡니다 ([TRANSLATION_WORKFLOW.md](TRANSLATION_WORKFLOW.md#파일-다루기) 참고).
-
 ---
 
 ## 이미지와 미디어
