@@ -19,7 +19,7 @@
 [![Version](https://img.shields.io/badge/version-2.1.310-brightgreen)](CHANGELOG.md)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-2.1+-purple)](https://code.claude.com)
 
-🌐 **Language / Ngôn ngữ / 语言 / Мова / 한국어:** [English](../README.md) | [Tiếng Việt](../vi/README.md) | [中文](../zh/README.md) | [Українська](../uk/README.md) | [日本語](../ja/README.md) | [한국어](README.md)
+🌐 **Language / Ngôn ngữ / 语言 / Мова / 언어:** [English](../README.md) | [Tiếng Việt](../vi/README.md) | [中文](../zh/README.md) | [Українська](../uk/README.md) | [日本語](../ja/README.md) | [한국어](README.md)
 
 # 주말 동안 Claude Code 마스터하기
 
@@ -72,7 +72,7 @@ Claude Code가 가진 힘의 90%를 쓰지 못하고 있는데, 무엇을 모르
 
 - **10개의 튜토리얼 모듈**: 슬래시 명령부터 맞춤 에이전트 팀까지 Claude Code의 모든 기능을 다룹니다
 - **복사해 바로 쓰는 설정**: 슬래시 명령, CLAUDE.md 템플릿, 훅 스크립트, MCP 설정, 서브에이전트 정의, 완성된 플러그인 묶음
-- **Mermaid 다이어그램**: 각 기능이 내부에서 어떻게 작동하는지 보여 주므로 *어떻게*뿐 아니라 *왜*까지 이해할 수 있습니다
+- **Mermaid 다이어그램**: 각 기능이 내부에서 어떻게 작동하는지 보여 주므로 *어떻게* 뿐 아니라 *왜* 까지 이해할 수 있습니다
 - **안내형 학습 경로**: 11~13시간 만에 초보자에서 파워 유저로 성장합니다
 - **내장 자가 진단**: Claude Code에서 바로 `/self-assessment`나 `/lesson-quiz hooks`를 실행해 부족한 부분을 찾을 수 있습니다
 
@@ -156,13 +156,18 @@ mkdir -p /path/to/your-project/.claude/commands
 cp 01-slash-commands/optimize.md /path/to/your-project/.claude/commands/
 
 # 3. 사용해 보기: Claude Code에서 다음을 입력합니다
-# /optimize
+# /optimize $ARGUMENTS
 
 # 4. 더 해 볼까요? 프로젝트 메모리 설정하기:
 cp 02-memory/project-CLAUDE.md /path/to/your-project/CLAUDE.md
+cp 02-memory/personal-CLAUDE.md ~/.claude/CLAUDE.md
 
 # 5. 스킬 설치하기:
-cp -r 03-skills/code-review-specialist ~/.claude/skills/
+cp -r 03-skills/code-review-specialist ~/.claude/skills/ 
+# 또는 
+cp -r 03-skills/code-review-specialist /path/to/your-project/.claude/skills/
+# Claude Code에서 다음을 입력합니다. 
+# /code-review-specialist
 ```
 
 전체 설정을 원한다면 **1시간 핵심 설정**을 따라 해 보세요.
