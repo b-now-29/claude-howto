@@ -163,10 +163,10 @@ cp 02-memory/project-CLAUDE.md /path/to/your-project/CLAUDE.md
 cp 02-memory/personal-CLAUDE.md ~/.claude/CLAUDE.md
 
 # 5. 스킬 설치하기:
-cp -r 03-skills/code-review-specialist ~/.claude/skills/ 
-# 또는 
+cp -r 03-skills/code-review-specialist ~/.claude/skills/
+# 또는
 cp -r 03-skills/code-review-specialist /path/to/your-project/.claude/skills/
-# Claude Code에서 다음을 입력합니다. 
+# Claude Code에서 다음을 입력합니다.
 # /code-review-specialist
 ```
 
