@@ -114,7 +114,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 08-checkpoints | 완료 | `038f6c4` |
 | 09-advanced-features | 완료 | `f481ec7` |
 | 10-cli | 완료 | `c18e365` |
-| 루트 문서 (아래 목록) | 진행 중 (기여·정책 문서 완료) | |
+| 루트 문서 (아래 목록) | 완료 | `ea178e2` |
 
 ### 루트 문서 번역 범위
 
@@ -135,7 +135,7 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 | 9 | `INDEX.md` | 930 | 전체 예제 색인. 다른 번역이 끝난 뒤 링크를 맞춰 번역 | 완료 (`d379ac6`) |
 | 10 | `resources.md` | 271 | 외부 학습 자료 목록 | 완료 (`cbb1862`) |
 | 11 | `clean-code-rules.md` | 115 | 04장 clean-code-reviewer 실습에 쓰는 규칙 | 완료 (`bd48514`) |
-| 12 | `CHANGELOG.md` | 1227 | 변경 기록. 원문이 계속 늘어나므로 번역 시점의 버전까지만 옮기고, `i18n-source-sha`로 이후 갱신 범위를 확인 | 다음 차례 |
+| 12 | `CHANGELOG.md` | 1227 | 변경 기록. 원문이 계속 늘어나므로 번역 시점의 버전까지만 옮기고, `i18n-source-sha`로 이후 갱신 범위를 확인 | 완료 (`ea178e2`) |
 
 **번역하지 않음** (원문 링크 유지):
 
@@ -148,6 +148,21 @@ PATH=/opt/node22/bin:$PATH python scripts/check_mermaid.py --strict
 
 ## 남은 일과 메모
 
-- 번역이 끝나면 `.pre-commit-config.yaml`에 `ko/` 전용 검사를 추가해야 합니다 (`vi/`, `ja/` 항목 참고).
+- `.pre-commit-config.yaml`에 `ko/` 전용 검사(`korean-markdown-lint`, `korean-cross-references`, `korean-mermaid`, `korean-link-check`)를 추가했습니다. 클라우드 세션에서 Mermaid 우회 방법을 쓸 때는 `SKIP`에 `korean-mermaid`도 넣습니다.
+- 앞으로는 원문이 바뀔 때 `i18n-source-sha`와 원문의 최신 커밋을 비교해 번역을 갱신합니다. `ko/CHANGELOG.md`는 `28149a8`(v2.1.245 항목)까지 옮겼습니다.
 - 06 챕터의 예제 훅 스크립트(`.sh`, `.py`)와 07 챕터 플러그인의 `plugin.json`, 훅(`.js`), 스크립트, MCP 설정은 `ko/`에 없습니다. 플러그인을 설치할 때는 원문 폴더를 지정합니다.
 - 03 챕터 스킬의 `scripts/`는 `ko/`에 없습니다. 한국어판 스킬을 실습할 때는 원문 폴더의 `scripts/`를 함께 복사해야 합니다.
+
+## 작업 보고 (2026-10-30, 클라우드 세션)
+
+루트 문서 9~12번(`INDEX.md`, `resources.md`, `clean-code-rules.md`, `CHANGELOG.md`)을 번역해 전체 번역을 마쳤습니다.
+
+**검사 결과**
+- `ko/` 파일 대상 `pre-commit`(markdown-lint, cross-references, link-check, markdown-rendering)과 새 `korean-*` 검사는 모두 통과했습니다.
+- **환경 문제 — Mermaid 검사를 하지 못함:** 이번 세션에서는 권한 분류기가 "품질 검사" 3단계(npm에서 Pele 번들을 받아 실행)를 막았습니다. 이번에 새로 들어간 Mermaid 다이어그램은 `ko/resources.md`의 두 개뿐이며, 원문과 바이트 단위로 같음을 diff로 확인했습니다. 로컬에서 `python scripts/check_mermaid.py --strict`를 한 번 실행해 확인해야 합니다.
+- **환경 문제 — 외부 링크 경고:** link-check는 통과했지만 프록시 403 때문에 많은 외부 URL에 경고를 냈습니다(`docs.anthropic.com`, `modelcontextprotocol.io`, `youtube.com` 등). 번역 문제가 아니며, 로컬에서 다시 확인하면 됩니다.
+- **번역 문제 — 고침:** `ko/06-hooks/README.md` 98줄에서 링크 바로 뒤에 붙은 괄호 때문에 link-check가 URL을 `https://code.claude.com/docs/en/permissions)(`로 잘못 읽어 404를 냈습니다. 링크와 괄호 사이에 공백을 넣었습니다.
+
+**그 밖의 변경**
+- `ko/README.md`의 버전 배지 링크를 번역본 `CHANGELOG.md`로 바꿨습니다.
+- `ko/INDEX.md`에는 원문 경로 기준이라는 한국어판 안내 한 줄을 넣었습니다.
